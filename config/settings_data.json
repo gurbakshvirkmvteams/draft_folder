@@ -9,7 +9,11 @@
  */
 {
   "current": {
-    "logo_width": 210,
+    "logo": "shopify://shop_images/sun-co-logo.svg",
+    "logo_text": "SUN CO.",
+    "logo_width": 30,
+    "logo_text_size": 16,
+    "favicon": "shopify://shop_images/sun-co-logo.svg",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#121212",
     "gradient_accent_1": "",
