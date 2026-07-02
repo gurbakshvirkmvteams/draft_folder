@@ -9,6 +9,17 @@
  */
 {
   "sections": {
+    "hero_banner_Eb6tKc": {
+      "type": "hero-banner",
+      "name": "Custom Hero Section",
+      "settings": {
+        "hero_image": "shopify://shop_images/hero_banner.png",
+        "discount_amount": "25%",
+        "hero_heading": "Summer Sale",
+        "hero_description": "Discover our summer styles with discount",
+        "button_text": "Shop Now"
+      }
+    },
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b": {
       "type": "image-banner",
       "blocks": {
@@ -43,6 +54,7 @@
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-1",
         "template--18309637636369__6a3bb789-ce10-45f5-ae67-e2063ef8c76b-168016437761699a6e-2"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/theme_cover_image.jpg",
@@ -60,6 +72,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "<strong>Featured products</strong>",
         "heading_size": "h1",
@@ -115,6 +128,7 @@
         "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-1",
         "template--18309637636369__f1552b18-6017-4231-810d-74e61da22c37-1680164422d7fb2efc-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/theme_cover_image.jpg",
         "height": "adapt",
@@ -150,6 +164,7 @@
         "template--18309637636369__38cdf60f-e431-43b5-aac3-7e6215447d67-1680164898782d94ce-0",
         "template--18309637636369__38cdf60f-e431-43b5-aac3-7e6215447d67-1680164898782d94ce-1"
       ],
+      "disabled": true,
       "settings": {
         "title": "<strong>Collections</strong>",
         "heading_size": "h1",
@@ -162,12 +177,52 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "featured_collection_H93gme": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Explore our latest drops",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "subtitle",
+        "collection": "sneakers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_products_cUiBEx": {
+      "type": "featured-products",
+      "name": "Custom Featured Section",
+      "settings": {
+        "section_heading": "Explore our latest drops",
+        "collection": "sneakers"
+      }
     }
   },
   "order": [
+    "hero_banner_Eb6tKc",
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b",
     "featured_collection",
     "f1552b18-6017-4231-810d-74e61da22c37",
-    "38cdf60f-e431-43b5-aac3-7e6215447d67"
+    "38cdf60f-e431-43b5-aac3-7e6215447d67",
+    "featured_collection_H93gme",
+    "featured_products_cUiBEx"
   ]
 }
