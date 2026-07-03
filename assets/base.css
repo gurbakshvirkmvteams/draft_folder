@@ -3256,7 +3256,9 @@ details-disclosure>details {
   padding: 12px 16px;
   border: 1px solid #E9EBEE;
 }
-
+.custom-quantity::after{
+  box-shadow: none;
+}
 .custom-quantity__input {
   color: black;
   font-weight: 700;
