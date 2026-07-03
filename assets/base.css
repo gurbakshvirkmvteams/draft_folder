@@ -3330,12 +3330,10 @@ details-disclosure>details {
   align-items: center;
   gap: 10px;
 }
-
 .header-logo-text {
   font-weight: 600;
   line-height: 24px;
 }
-
 .custom-header-container.page-width {
   max-width: 1156px;
 }

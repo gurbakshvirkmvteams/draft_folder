@@ -61,9 +61,9 @@ class CartItems extends HTMLElement {
   getSectionsToRender() {
     return [
       {
-        id: 'main-cart-items',
+        id: 'custom-cart-wrapper',
         section: document.getElementById('main-cart-items').dataset.id,
-        selector: '.js-contents'
+        selector: '#custom-cart-wrapper'
       },
       {
         id: 'cart-icon-bubble',
@@ -75,11 +75,11 @@ class CartItems extends HTMLElement {
         section: 'cart-live-region-text',
         selector: '.shopify-section'
       },
-      {
-        id: 'main-cart-footer',
-        section: document.getElementById('main-cart-footer').dataset.id,
-        selector: '.js-contents'
-      }
+      // {
+      //   id: 'main-cart-footer',
+      //   section: document.getElementById('main-cart-footer').dataset.id,
+      //   selector: '.js-contents'
+      // }
     ];
   }
 
