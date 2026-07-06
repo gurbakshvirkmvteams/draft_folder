@@ -227,9 +227,9 @@
             </div>
           {%- endif -%}
 
-          {%- if section.settings.show_social and has_social_icons -%}
+          {% comment %} {%- if section.settings.show_social and has_social_icons -%}
             {%- render 'social-icons' -%}
-          {%- endif -%}
+          {%- endif -%} {% endcomment %}
         </div>
       </div>
     {%- endunless -%}
@@ -238,6 +238,7 @@
   <div class="footer__content-bottom">
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__localization isolate">
+                  
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <noscript>
             {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
@@ -332,8 +333,23 @@
         {%- endif -%}
       </div>
     </div>
-    <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
-      <div class="footer__copyright caption">
+    <div class="footer__content-bottom-wrapper footer__content-bottom-wrapper-custom  page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %} main-container ">
+    <div class="custom-footer-logo-wrapper"><div
+                              class="footer-block__image-wrapper global-media-settings"
+                              style="max-width: min(100%, {{ settings.brand_image_width }}px);"
+                            >
+                          {{
+                            settings.brand_image
+                            | image_url: width: 1100
+                            | image_tag:
+                              loading: 'lazy',
+                              widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
+                              height: brand_image_height,
+                              width: settings.brand_image_width
+                          }}
+                        </div>
+                          <h2 class="footer-block__heading footer-block__heading-custom rte">{{ settings.brand_headline }}</h2></div>
+    <div class="footer__copyright caption">
         <small class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
@@ -352,9 +368,14 @@
           </ul>
         {%- endif -%}
       </div>
+     {% comment %} {%- render 'social-icons' -%} {% endcomment %}
+ {%- if section.settings.show_social and has_social_icons -%}
+            {%- render 'custom-social-icons' -%}
+          {%- endif -%}
     </div>
   </div>
 </footer>
+
 
 {%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
   <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>

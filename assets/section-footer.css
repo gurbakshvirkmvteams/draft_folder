@@ -514,3 +514,24 @@
     }
   }
 }
+.footer-block__heading.footer-block__heading-custom{
+    margin-bottom:0;
+    margin-top: 0;
+}
+.footer__content-bottom-wrapper.footer__content-bottom-wrapper-custom{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+}
+.custom-footer-logo-wrapper .footer-block__image-wrapper{
+  margin-bottom:0;
+}
+.custom-footer-logo-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.footer__copyright {
+    margin-top: 0;
+}

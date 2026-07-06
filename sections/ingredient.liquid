@@ -7,6 +7,7 @@
     padding-bottom:{{ section.settings.padding_bottom }}px;
   "
 >
+
   {% for block in section.blocks %}
     <div class="custom-page-width">
       {% case block.type %}
@@ -34,7 +35,6 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'tab' %}
-          {% comment %} {{ forloop.index }} {% endcomment %}
           <button class="ingredient-tab-button" data-tab="{{ block.settings.tab_title }}">
             {{ block.settings.tab_title }}
           </button>
@@ -48,7 +48,6 @@
       {% case block.type %}
         {% when 'tab' %}
           {% assign tab_index = tab_index | plus: 1 %}
-          {% comment %} {{ forloop.index }} {% endcomment %}
           <div class="ingredient-card" data-tab="{{ block.settings.tab_title }}" data-index="{{ tab_index }}">
             <div class="ingredient-card-title" data-index="{{ tab_index }}">{{ block.settings.title }}</div>
             <div class="">{{ block.settings.description }}</div>

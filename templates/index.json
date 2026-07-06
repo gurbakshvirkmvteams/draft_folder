@@ -214,6 +214,63 @@
         "section_heading": "Explore our latest drops",
         "collection": "sneakers"
       }
+    },
+    "ingredient_tVLNRd": {
+      "type": "ingredient",
+      "blocks": {
+        "heading_ch8Pjb": {
+          "type": "heading",
+          "settings": {
+            "heading": "The formula behind the ritual.",
+            "heading_font_size": 32,
+            "heading_text_color": "#000000",
+            "text_transform": "uppercase"
+          }
+        },
+        "description_RLHrba": {
+          "type": "description",
+          "settings": {
+            "description": "Every ingredient was selected to support hydration, recovery, performance, and mental clarity without unnecessary fillers or sugar."
+          }
+        },
+        "tab_QL8x6i": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Focus",
+            "title": "L-Theanine — 200mg",
+            "description": "Promotes calm, sustained mental clarity. Works synergistically with natural caffeine for clean energy without the crash."
+          }
+        },
+        "tab_LBHb8m": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Hydration",
+            "title": "Electrolyte Blend — 1.2g",
+            "description": "Replenishes sodium, potassium, and magnesium lost through sweat to keep you performing at your peak."
+          }
+        },
+        "tab_apdH36": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Supports Strength",
+            "title": "Creatine Monohydrate — 5g",
+            "description": "Supports strength, recovery, and cognitive performance. One of the most researched performance compounds in the world."
+          }
+        }
+      },
+      "block_order": [
+        "heading_ch8Pjb",
+        "description_RLHrba",
+        "tab_QL8x6i",
+        "tab_LBHb8m",
+        "tab_apdH36"
+      ],
+      "name": "Ingredient Details",
+      "settings": {
+        "label": "Ingredient Science",
+        "padding_top": 80,
+        "padding_bottom": 100
+      }
     }
   },
   "order": [
@@ -223,6 +280,7 @@
     "f1552b18-6017-4231-810d-74e61da22c37",
     "38cdf60f-e431-43b5-aac3-7e6215447d67",
     "featured_collection_H93gme",
-    "featured_products_cUiBEx"
+    "featured_products_cUiBEx",
+    "ingredient_tVLNRd"
   ]
 }
