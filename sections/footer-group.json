@@ -12,7 +12,7 @@
   "type": "footer",
   "sections": {
     "footer": {
-      "type": "footer",
+      "type": "custom-footer",
       "blocks": {
         "55172ef6-3a6a-4cfa-b790-88739b47891f": {
           "type": "link_list",
@@ -24,7 +24,6 @@
         },
         "6e0c08d4-cd4c-439c-b5e2-a483bba29ec2": {
           "type": "brand_information",
-          "disabled": true,
           "settings": {
             "show_social": true
           }
