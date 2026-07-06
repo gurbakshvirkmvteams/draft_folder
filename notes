@@ -16,3 +16,12 @@ Created Products Section in Cart page
 Edited Cart Logic With Custom Design Product summary section
 Created Cart Page With custom code in Shopify Dawn Theme 
 And Made page Responsive for Tablets and mobile
+
+
+# Shopify
+Sections Blocks Schema Practice from documentation
+Created Custom section and blocks both for section containing tabs
+Added For Loop to Tabs with js 
+Made cards buttons sync together with next card button 
+and added transitons tothe cards
+added Used Adjustable padding and margin settins to the page

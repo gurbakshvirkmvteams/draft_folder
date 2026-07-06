@@ -369,7 +369,7 @@
         {%- endif -%}
       </div>
      {% comment %} {%- render 'social-icons' -%} {% endcomment %}
- {%- if section.settings.show_social and has_social_icons -%}
+ {%- if section.settings.show_social_footer -%}
             {%- render 'custom-social-icons' -%}
           {%- endif -%}
     </div>
@@ -555,6 +555,12 @@
       "id": "show_social",
       "default": true,
       "label": "t:sections.footer.settings.show_social.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_footer",
+      "default": true,
+      "label": "Footer Section Social Icons"
     },
     {
       "type": "header",
