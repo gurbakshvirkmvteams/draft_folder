@@ -348,7 +348,9 @@
         "section_subheading": "NO BS.",
         "tagline": "Don’t see your question? Hit us up — a human will reply within an hour.",
         "button_text": "Email Support",
-        "button_link": ""
+        "button_link": "",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },

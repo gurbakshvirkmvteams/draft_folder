@@ -45,7 +45,7 @@
 
 <media-gallery
   id="MediaGallery-{{ section.id }}{{ id_append }}"
-  role="region" 
+  role="region"
   {% if section.settings.enable_sticky_info %}
     class=" custom-product-gallery product__column-sticky"
   {% endif %}
@@ -53,7 +53,18 @@
   data-desktop-layout="{{ section.settings.gallery_layout }}"
 >
   <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
-  <slider-component id="GalleryViewer-{{ section.id }}{{ id_append }}" class="slider-mobile-gutter custom-gallery-slider">
+  <slider-component
+    id="GalleryViewer-{{ section.id }}{{ id_append }}"
+    class="slider-mobile-gutter custom-gallery-slider"
+  >
+    <div class="swiper productSwiper">
+      <div class="swiper-wrapper">
+        <!-- slides here -->
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
     {%- unless is_duplicate -%}
       <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
         {{ 'accessibility.skip_to_product_info' | t }}
@@ -88,6 +99,8 @@
           %}
         </li>
       {%- endif -%}
+
+      {% comment %} main image  {% endcomment %}
       {%- for media in product.media -%}
         {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
           <li
@@ -103,19 +116,19 @@
               endif
             -%}
             {% render 'product-thumbnail',
-                media: media,
-                media_count: media_count,
-                position: media_position,
-                desktop_layout: section.settings.gallery_layout,
-                mobile_layout: section.settings.mobile_thumbnails,
-                loop: section.settings.enable_video_looping,
-                modal_id: section.id,
-                xr_button: true,
-                media_width: media_width,
-                media_fit: section.settings.media_fit,
-                constrain_to_viewport: section.settings.constrain_to_viewport,
-                lazy_load: lazy_load
-              %}
+              media: media,
+              media_count: media_count,
+              position: media_position,
+              desktop_layout: section.settings.gallery_layout,
+              mobile_layout: section.settings.mobile_thumbnails,
+              loop: section.settings.enable_video_looping,
+              modal_id: section.id,
+              xr_button: true,
+              media_width: media_width,
+              media_fit: section.settings.media_fit,
+              constrain_to_viewport: section.settings.constrain_to_viewport,
+              lazy_load: lazy_load
+            %}
           </li>
         {%- endunless -%}
       {%- endfor -%}
@@ -179,7 +192,7 @@
       >
         {% render 'icon-caret' %}
       </button>
-     <ul
+      <ul
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
         class="thumbnail-list list-unstyled custom-thumbnail-list slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
       >
@@ -219,16 +232,22 @@
               aria-controls="GalleryViewer-{{ section.id }}{{ id_append }}"
               aria-describedby="{{ thumbnail_id }}"
             >
-              {{ featured_media.preview_image | image_url: width: 416 | image_tag:
-                loading: 'lazy',
-                sizes: sizes,
-                widths: '54, 74, 104, 162, 208, 324, 416',
-                id: thumbnail_id,
-                alt: featured_media.alt | escape
+              {{
+                featured_media.preview_image
+                | image_url: width: 416
+                | image_tag:
+                  loading: 'lazy',
+                  sizes: sizes,
+                  widths: '54, 74, 104, 162, 208, 324, 416',
+                  id: thumbnail_id,
+                  alt: featured_media.alt
+                | escape
               }}
             </button>
           </li>
         {%- endif -%}
+
+        {% comment %} thumbnails desktop  {% endcomment %}
         {%- for media in product.media -%}
           {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
             {%- liquid
@@ -273,12 +292,16 @@
                 aria-controls="GalleryViewer-{{ section.id }}{{ id_append }}"
                 aria-describedby="{{ thumbnail_id }}"
               >
-                {{ media.preview_image | image_url: width: 416 | image_tag:
-                  loading: 'lazy',
-                  sizes: sizes,
-                  widths: '54, 74, 104, 162, 208, 324, 416',
-                  id: thumbnail_id,
-                  alt: media.alt | escape
+                {{
+                  media.preview_image
+                  | image_url: width: 416
+                  | image_tag:
+                    loading: 'lazy',
+                    sizes: sizes,
+                    widths: '54, 74, 104, 162, 208, 324, 416',
+                    id: thumbnail_id,
+                    alt: media.alt
+                  | escape
                 }}
               </button>
             </li>
