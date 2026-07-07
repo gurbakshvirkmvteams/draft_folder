@@ -1,0 +1,81 @@
+<link
+  rel="stylesheet"
+  href="{{ 'custom-faq.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+
+{% if section.settings.section_heading != blank %}
+  <div class="custom-faq-section-container custom-page-width">
+
+    <div class="custom-faq-heading-container">
+      <h1 class="custom-faq-heading">{{ section.settings.section_heading }}</h1>
+      <p class="custom-faq-description">{{ section.settings.tagline }}</p>
+        <a href="{{ section.settings.button_link }}" class="custom-faq-button">
+          {{ section.settings.button_text }}
+        </a>
+    </div>
+    {% for block in section.blocks %}
+      <div class="custom-faq-wrapper" {{ block.shopify_attributes }}>
+        {% case block.type %}
+          {% when 'faq' %}
+            <div class="custom-question-body">
+              <h2 class="custom-question">{{ block.settings.question }}</h2>
+              <div class="custom-answer">{{ block.settings.answer }}</div>
+            </div>
+        {% endcase %}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Faq Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Section Heading",
+        "default": "Add section heading"
+      }, {
+        "type": "text",
+        "id": "tagline",
+        "label": "Tagline",
+        "default": "Add a Tagline"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Button Text"
+      }, {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Faq",
+        "type": "faq",
+        "settings": [
+          {
+            "type": "text",
+            "id": "question",
+            "label": "Add Question",
+            "default": "Customer Question"
+          }, {
+            "type": "richtext",
+            "id": "answer",
+            "label": "Add Answer",
+            "default": "<p>Our Answer</p>"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Faq Section"
+      }
+    ]
+  }
+{% endschema %}

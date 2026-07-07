@@ -1,0 +1,29 @@
+.custom-faq-section-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-width: 50%;
+}
+.custom-faq-heading-container{
+    
+}
+.custom-faq-heading{
+    
+}
+.custom-faq-description{
+    
+}
+.custom-faq-button{
+    
+}
+.custom-faq-wrapper{
+    border: 1px solid red;
+}
+.custom-question-body{
+    
+}
+.custom-question{
+    
+}
+.custom-answer{
+    
+}
