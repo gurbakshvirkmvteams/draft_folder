@@ -271,6 +271,85 @@
         "padding_top": 80,
         "padding_bottom": 100
       }
+    },
+    "custom_faq_wmEAiL": {
+      "type": "custom-faq",
+      "blocks": {
+        "faq_wTNPtK": {
+          "type": "faq",
+          "settings": {
+            "question": "Will it fit my boat?",
+            "answer": "<p>The universal clip system fits any transom 6\"–24\" — pontoons, runabouts, ski boats, deck boats, even fixed docks. If it doesn’t fit yours, send a photo of your stern and we’ll refund you on the spot.</p>"
+          }
+        },
+        "faq_ewJBaR": {
+          "type": "faq",
+          "settings": {
+            "question": "How heavy a dog can it really hold?",
+            "answer": "<p>The ramp is built for medium to extra-large dogs and supports up to approximately 200–210 lbs depending on the model size and inflation level. The reinforced drop-stitch PVC construction keeps it stable even when large dogs climb aboard.</p>"
+          }
+        },
+        "faq_ErGV4y": {
+          "type": "faq",
+          "settings": {
+            "question": "What happens if it gets punctured?",
+            "answer": "<p>The ramp is made from heavy-duty PVC designed to resist claws and abrasion, but if punctured it can usually be repaired quickly using the included repair patch kit. Small punctures generally do not make the ramp unusable immediately</p>"
+          }
+        },
+        "faq_Jhk9YL": {
+          "type": "faq",
+          "settings": {
+            "question": "Does it work for senior or arthritic dogs?",
+            "answer": "<p>Yes. The submerged mesh entry and EVA non-slip surface help older or arthritic dogs enter the ramp gradually instead of needing to jump. Many owners use these ramps specifically to reduce lifting strain and joint stress</p>"
+          }
+        },
+        "faq_drE37q": {
+          "type": "faq",
+          "settings": {
+            "question": "How long does the pump battery last?",
+            "answer": "<p>The included electric pump typically inflates the ramp in a few minutes per charge. Exact runtime depends on the pump model, but most rechargeable pumps can handle multiple inflations before recharging. Manual inflation options may also be supported depending on the package selected</p>"
+          }
+        },
+        "faq_F833pq": {
+          "type": "faq",
+          "settings": {
+            "question": "Saltwater okay?",
+            "answer": "<p>Yes. The PVC and EVA materials are suitable for both freshwater and saltwater use. For longest lifespan, rinse the ramp with clean water after saltwater exposure and allow it to dry before storage</p>"
+          }
+        },
+        "faq_9XgJaa": {
+          "type": "faq",
+          "settings": {
+            "question": "Shipping time?",
+            "answer": "<p>Shipping time depends on your location and the AliExpress warehouse used. Most orders are processed within a few days, with estimated delivery commonly ranging from 1–3 weeks internationally</p>"
+          }
+        },
+        "faq_Ri987n": {
+          "type": "faq",
+          "settings": {
+            "question": "What if my dog hates it?",
+            "answer": "<p>Most dogs adapt quickly after a short introduction. Training with treats or toys usually helps during the first use. The high-visibility colors and gradual water entry are designed to make dogs feel comfortable and confident in the water.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_wTNPtK",
+        "faq_ewJBaR",
+        "faq_ErGV4y",
+        "faq_Jhk9YL",
+        "faq_drE37q",
+        "faq_F833pq",
+        "faq_9XgJaa",
+        "faq_Ri987n"
+      ],
+      "name": "Faq Section",
+      "settings": {
+        "section_heading": "ASKED. ANSWERED.",
+        "section_subheading": "NO BS.",
+        "tagline": "Don’t see your question? Hit us up — a human will reply within an hour.",
+        "button_text": "Email Support",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -281,6 +360,7 @@
     "38cdf60f-e431-43b5-aac3-7e6215447d67",
     "featured_collection_H93gme",
     "featured_products_cUiBEx",
-    "ingredient_tVLNRd"
+    "ingredient_tVLNRd",
+    "custom_faq_wmEAiL"
   ]
 }

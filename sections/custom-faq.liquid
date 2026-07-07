@@ -22,11 +22,11 @@
         </a>
       </div>
     </div>
-    <div class="custom-faq-wrapper" {{ block.shopify_attributes }}>
+    <div class="custom-faq-wrapper" >
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'faq' %}
-            <div class="custom-question-body">
+            <div class="custom-question-body" {{ block.shopify_attributes }}>
               <h2 class="custom-question">
                 {{ block.settings.question }}
                 <span class="product-faqs__icon">
@@ -56,7 +56,15 @@
     </div>
   </div>
 {% endif %}
-
+<script>
+  const customQuestion = document.querySelectorAll('.custom-question');
+  customQuestion.forEach((question) => {
+    question.addEventListener('click', () => {
+      question.parentElement.classList.toggle('active');
+    });
+  });
+  // customQuestion[0].style.borderTop = "2px solid var(--border-color, #d8ddd9)";
+</script>
 {% schema %}
 {
   "name": "Faq Section",

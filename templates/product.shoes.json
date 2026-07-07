@@ -108,74 +108,11 @@
         "description": "<p>Energize your look with a fresh take on heritage adidas style. The adidas Daily 3.0 Shoes cut a classic profile with a modern suede upper.</p><ul><li>Regular fit</li><li>Lace closure</li><li>Rubber outsole with vulcanized look</li><li>Imported</li></ul>",
         "image": "shopify://shop_images/Rectangle_1534_2.png"
       }
-    },
-    "custom_faq_rjxAXj": {
-      "type": "custom-faq",
-      "blocks": {
-        "faq_a6G6hx": {
-          "type": "faq",
-          "settings": {
-            "question": "Customer Questionfhnjyrfjedthejhsx",
-            "answer": "<p>Our Answerthbddntjtdgnv vdethtejryjrsygfh</p>"
-          }
-        },
-        "faq_KeNj6M": {
-          "type": "faq",
-          "settings": {
-            "question": "Customer Question",
-            "answer": "<p>Our Answer</p>"
-          }
-        },
-        "faq_cT6GQj": {
-          "type": "faq",
-          "settings": {
-            "question": "Customer Question",
-            "answer": "<p>Our Answer</p>"
-          }
-        },
-        "faq_JtWaNz": {
-          "type": "faq",
-          "settings": {
-            "question": "Customer Question",
-            "answer": "<p>Our Answer</p>"
-          }
-        },
-        "faq_ecaFA8": {
-          "type": "faq",
-          "settings": {
-            "question": "Customer Question",
-            "answer": "<p>Our Answer</p>"
-          }
-        },
-        "faq_93zrtr": {
-          "type": "faq",
-          "settings": {
-            "question": "Customer Question",
-            "answer": "<p>Our Answer</p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_a6G6hx",
-        "faq_KeNj6M",
-        "faq_cT6GQj",
-        "faq_JtWaNz",
-        "faq_ecaFA8",
-        "faq_93zrtr"
-      ],
-      "name": "Add Faq Section",
-      "settings": {
-        "section_heading": "Add section headingeghjrytkt",
-        "tagline": "Add a Taglinerthrhd",
-        "button_text": "Button Textrnrjrjnrj5rj",
-        "button_link": ""
-      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "product_description_xLnLnc",
-    "custom_faq_rjxAXj"
+    "product_description_xLnLnc"
   ]
 }
